@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <a href="/register">register</a>
+
+
+    <table th:each="ob : ${lst}">
+        <tr>
+            <td th:text="${ob.id}"></td>
+            <td th:text="${ob.name}"></td>
+            <td th:text="${ob.age}"></td>
+
+        </tr>
+
+    </table>
+
+
+</body>
+</html>
